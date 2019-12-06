@@ -101,7 +101,6 @@ async function start(){
             
                     teamHTML = teamHTML + "\n" + eval('`'+ teamMember +'`');
 
-                    // team.push(manager);
                 });
                 break;
             case "Intern":
@@ -127,6 +126,21 @@ async function start(){
                 break;
         }
     }
+
+    const mainHTML = fs.readFileSync("templates/main.html");
+            
+    teamHTML = eval('`'+ mainHTML +'`');
+
+    fs.writeFile("output/DreamTeam.html", teamHTML, function(err) {
+
+        if (err) {
+          return console.log(err);
+        }
+      
+        console.log("Success!");
+      
+      });
+
 
     //console.log(teamMember);
 
