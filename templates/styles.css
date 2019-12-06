@@ -1,0 +1,11 @@
+#titleBar{
+    background-color: #e94754;
+    height: 130px;
+}
+#title{
+    font-size: 40px;
+    color: #ffffff;
+}
+li{
+    font-size: 14px;
+}
