@@ -131,7 +131,7 @@ async function start(){
             
     teamHTML = eval('`'+ mainHTML +'`');
 
-    fs.writeFile("output/DreamTeam.html", teamHTML, function(err) {
+    fs.writeFile("output/team.html", teamHTML, function(err) {
 
         if (err) {
           return console.log(err);
